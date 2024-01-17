@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizRealm:World History Quiz</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Redressed&family=Rubik&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/956c27d09e.js" crossorigin="anonymous"></script>
+</head>
+
+<body><div class="header">
+    <div class="inner-header flex">
+    <path fill="#fff"
+    d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+    C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+    c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
+    </g>
+    </svg>
+    <h1 id="heading">Do You Want to Start the <em>World History Quiz</em> ?</h1>
+       
+    </div>
+    <!--Waves Container-->
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    </div>
+    <div class="start">
+         <button id="startButton">Start Quiz</button>
+    </div>
+    <section class="disclaimer">
+        <h2>Disclaimer</h2>
+        <div class="underline"></div>
+        <div class="inst">
+            <p><strong>a)</strong> There will be only <span class="blue">10 Questions</span>.</p>
+            <p><strong>b)</strong> Each question will carry <span class="blue">1 Marks</span>.</p>
+            <p><strong>c)</strong> There will be <span class="blue">no negetive</span> marking.</p>
+            <p><strong>d)</strong> At a time you can select only one option.</p>
+            <p><strong>e)</strong> To get next Question press <span class="blue">Next Button</span>.</p>
+            <p><strong>f)</strong> Once you start the quiz,you can't exit.</p>
+        </div>
+        <div class="disBtn">
+            <button id="exit">Exit</button>
+            <button id="continue">Continue</button>
+        </div>
+    </section>
+    <section class="quiz">
+        <div class="question">
+            <h1>Quiz</h1>
+            <hr>
+            <article class="ques">
+                <div>
+                    <h2></h2>
+                </div>
+                <div class="option">
+                    <div class="inner">
+                        <h4 class="options"></h4>
+                
+                        <h4 class="options"></h4>
+                    </div>
+                    <div class="inner">
+                        <h4 class="options"></h4>
+                   
+                        <h4 class="options"></h4>
+                    </div>
+                </div>
+                <hr>
+            </article>
+            <div class="foot">
+           <p><span id="foot-span"></span> Out of 10 Questions</p>
+                <div><button id="nextBtn">Next Ques</button></div>
+            </div>
+        </div>
+
+    </section>
+    <section class="result">
+      <div class="crown"><i class="fa-solid fa-crown"></i></div>
+      <h3>Congratulations!</h3>
+      <p>You have got <span id="score">7</span> / 10</p>
+      <div>
+          <h4>Do You Want to Restart Quiz ?</h4>
+          <div class="restart">
+            <button id="restartBtn">Restart</button>
+          </div>
+      </div>
+    </section>
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/ankit_ydv29/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+        <a href="https://twitter.com/ankit_op_"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+       
+        
+        <div class="row">
+        Copyright © 2024 @Ankit & Anshika || Made for 3rd Sem  Mini Project
+        </div>
+        </div>
+        </footer>
+    <script src="history.js"></script>
+</body>
+
+</html>
